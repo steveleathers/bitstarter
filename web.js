@@ -1,7 +1,7 @@
 var fs = require('fs');
 var express = require('express');
 var buf = new Buffer(64);
-buf.write('index.html');
+buf.write('/index.html');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
