@@ -202,15 +202,42 @@
     <img class="img-polaroid" src="http://placehold.it/480x300">
     </div>
 </div>
-	<div class="span12">
-	  FAQ
+<!-- For the FAQ we introduce a little bit of JS, using the accordion.
+     This brings in jquery.js and bootstrap.js as dependencies.
+     http://twitter.github.io/bootstrap/avascript.html#collapse -->
+<div class="row-fluid faq">
+  <div class="span10 offset1">
+    <h3>FAQ</h3>
+    <div class="accordion" id="accordion2">
+      <div class="accordion-group">
+	<div class="accordion-heading">
+	  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="collapseOne">
+	    What? Why do I give a shit?
+	  </a>
 	</div>
-      </div>
-      <div class="row footer">
-	<div class="span12">
-	  Footer
+	<div>
+	  <div id="collapseOne" class="accordion-body collapse">
+	    <div class="accordion-inner">
+	      Because visual literacy is super important dummy. Have you ever had to fake your way through a conversation about how awesome the El Guincho videos are? Or what your favorite Eric Wareheim video is? Come on. This is necessary shit.
+	    </div>
+	  </div>
 	</div>
-      </div>
+	<div class="accordion-group">
+	  <div class="accordion-heading">
+	    <a class="accordion-toggle" data-toggle="collapse"
+	       data-parent="#accordion2" href="#collapseTwo">
+	      What is the impetus for this system?
+	    </a>
+	  </div>
+	  <div id ="collapseTwo" class="accordion-body collapse">
+	    <div class="accordion-inner">
+	      The EyeCandy VJs in Portland, Oregon have a hopelessly outdated system. We're going to create something big for them, and hope other people can use it.  
+	    </div>
+	  </div>
+	</div>
     </div>
-  </body>
+  </div>
+</div>
+
+</body>
 </html>
